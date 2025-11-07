@@ -21,4 +21,10 @@ fn main() {
     let loopback = IpAddr::V6(String::from("::1"));
     home.display();
     loopback.display();
+
+    let x: i8 = 5;
+    let y: Option<i8> = None;
+
+    let sum = x + y.unwrap_or(0);
+    println!("Sum: {}", sum);
 }
